@@ -8,16 +8,21 @@ const showsFile = "../data/shows.json";
 const startPage = 0;
 const endPage = 205;
 
-for (i = startPage; i <= endPage; i++) {
-   axios
-      .get("http://api.tvmaze.com/shows?page=0")
-      .then(async function (res) {
-         await res.data.forEach((show) => {
-            fs.appendFileSync(showsFile, `, ${JSON.stringify(show)}`);
-            console.log(`Shows added from page ${i}`);
+getShows();
+
+async function getShows() {
+   for (i = startPage; i <= endPage; i++) {
+      await axios
+         .get(`http://api.tvmaze.com/shows?page=${i}`)
+         .then((res) => {
+            const shows = res.data;
+            for (const show of shows) {
+               fs.appendFileSync(showsFile, `, ${JSON.stringify(show)}`);
+            }
+         })
+         .catch((error) => {
+            console.log(error);
          });
-      })
-      .catch(function (error) {
-         console.log(error);
-      });
+      console.log(`Shows added from page ${i}`);
+   }
 }
