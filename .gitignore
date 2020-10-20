@@ -70,4 +70,4 @@ yarn-error.log
 
 # Data files too large to check in
 
-data/
+data
