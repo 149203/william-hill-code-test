@@ -12,9 +12,9 @@ for (i = startPage; i <= endPage; i++) {
    axios
       .get("http://api.tvmaze.com/shows?page=0")
       .then(async function (res) {
-         await res.data.forEach((show, i) => {
+         await res.data.forEach((show) => {
             fs.appendFileSync(showsFile, `, ${JSON.stringify(show)}`);
-            console.log(`${i} shows added.`)
+            console.log(`Shows added from page ${i}`);
          });
       })
       .catch(function (error) {

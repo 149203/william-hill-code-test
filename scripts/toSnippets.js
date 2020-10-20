@@ -23,7 +23,7 @@ const snippets = toSafeParse(data).map((show) => {
          id: show.id,
          name: show.name,
          premieredAt: show.premiered,
-         rating: show.rating.average,
+         rating: getRating(show.rating.average),
          thumbnail: show.image.medium,
          genres: show.genres,
          summary: truncate(stripTags(show.summary), 100),
@@ -35,3 +35,8 @@ const snippets = toSafeParse(data).map((show) => {
 
 fs.writeFileSync("../data/snippets.json", JSON.stringify(snippets));
 console.log(`Wrote ${snippets.length} snippets to snippets.json.`);
+
+function getRating(rating) {
+   if (rating) return rating;
+   else return 0;
+}
