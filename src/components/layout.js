@@ -16,10 +16,10 @@ export default function Layout({ children }) {
    );
    return (
       <>
-         <header className="w-100 bg-dark text-white pt-2 pb-1 mb-7">
+         <header className="w-100 bg-dark text-white pt-2 pb-1 mb-7 fixed-top">
             <div className="container">
                <div className="row">
-                  <div className="col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                  <div className="col-12 col-xl-10 offset-xl-1">
                      <Link
                         to="/"
                         style={{ textDecoration: "none", color: "inherit" }}
@@ -38,11 +38,9 @@ export default function Layout({ children }) {
                </div>
             </div>
          </header>
-         <main className="container">
+         <main className="container mt-10">
             <div className="row">
-               <div className="col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                  {children}
-               </div>
+               <div className="col-12 col-xl-10 offset-xl-1">{children}</div>
             </div>
          </main>
       </>

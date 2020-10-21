@@ -7,9 +7,9 @@ export default function Home({ data }) {
    const snippets = data.allTopSnippetsJson.edges.map((edge) => edge.node);
    return (
       <Layout>
-         <h1 className="mb-6">Top 100 TV Shows of All Time</h1>
-         {snippets.map((snippet) => {
-            return <Snippet show={snippet} key={snippet.id} />;
+         <h1 className="mb-6">Top TV Shows of All Time</h1>
+         {snippets.map((snippet, i) => {
+            return <Snippet show={snippet} key={snippet.id} rank={i + 1} />;
          })}
       </Layout>
    );

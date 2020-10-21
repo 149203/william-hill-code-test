@@ -26,7 +26,7 @@ const snippets = toSafeParse(data).map((show) => {
          rating: getRating(show.rating.average),
          thumbnail: show.image.medium,
          genres: show.genres,
-         summary: truncate(stripTags(show.summary), 100),
+         summary: truncate(stripTags(show.summary), 220),
          language: show.language,
       };
    } else {
