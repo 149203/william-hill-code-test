@@ -3,14 +3,11 @@ const fs = require("fs");
 
 const showsFile = "../data/shows.json";
 
-// quick and dirty, let's start shows.json with the following characters: [{}
+getShows(0, 205);
 
-const startPage = 0;
-const endPage = 205;
+async function getShows(startPage, endPage) {
+   fs.writeFileSync(showsFile, "[{}");
 
-getShows();
-
-async function getShows() {
    for (i = startPage; i <= endPage; i++) {
       await axios
          .get(`http://api.tvmaze.com/shows?page=${i}`)
@@ -18,11 +15,14 @@ async function getShows() {
             const shows = res.data;
             for (const show of shows) {
                fs.appendFileSync(showsFile, `, ${JSON.stringify(show)}`);
+               console.log(show.name);
             }
          })
          .catch((error) => {
             console.log(error);
          });
-      console.log(`Shows added from page ${i}`);
+      console.log(`--------------Shows added from page ${i}`);
    }
+
+   fs.appendFileSync(showsFile, `]`);
 }

@@ -4,20 +4,20 @@ const { toSafeParse, truncate, stripTags } = require("../utils/helpers");
 const data = fs.readFileSync("../data/shows.json", "utf-8");
 
 const snippets = toSafeParse(data).map((show) => {
+   // if keys include the following and every key is not null
+   const fields = [
+      "id",
+      "name",
+      "premiered",
+      "rating",
+      "image",
+      "genres",
+      "summary",
+   ];
    if (
-      show.hasOwnProperty("id") &&
-      show.id &&
-      show.hasOwnProperty("name") &&
-      show.name &&
-      show.hasOwnProperty("premiered") &&
-      show.premiered &&
-      show.hasOwnProperty("rating") &&
-      show.rating &&
-      show.hasOwnProperty("image") &&
-      show.image &&
-      show.hasOwnProperty("genres") &&
-      show.hasOwnProperty("summary") &&
-      show.summary
+      fields.every((field) => {
+         return Object.keys(show).includes(field) && show[field] !== null;
+      })
    ) {
       return {
          id: show.id,
@@ -27,9 +27,10 @@ const snippets = toSafeParse(data).map((show) => {
          thumbnail: show.image.medium,
          genres: show.genres,
          summary: truncate(stripTags(show.summary), 100),
+         language: show.language,
       };
    } else {
-      return {}; // remove all empty objects later
+      return {}; // will remove all empty objects later
    }
 });
 
@@ -37,6 +38,6 @@ fs.writeFileSync("../data/snippets.json", JSON.stringify(snippets));
 console.log(`Wrote ${snippets.length} snippets to snippets.json.`);
 
 function getRating(rating) {
-   if (rating) return rating;
-   else return 0;
+   if (typeof rating === "number") return Math.round(rating * 10);
+   else return "NA";
 }
