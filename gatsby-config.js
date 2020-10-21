@@ -5,7 +5,9 @@
  */
 
 module.exports = {
-   /* Your site config here */
+   siteMetadata: {
+      title: `Top TV`,
+   },
    plugins: [
       {
          resolve: `gatsby-plugin-sass`,
@@ -14,5 +16,17 @@ module.exports = {
             precision: 6,
          },
       },
+      {
+         resolve: `gatsby-source-filesystem`,
+         options: {
+            name: `src`,
+            path: `${__dirname}/data/`,
+            ignore: [
+               `${__dirname}/data/shows.json`,
+               `${__dirname}/data/snippets.json`,
+            ],
+         },
+      },
+      `gatsby-transformer-json`,
    ],
 };

@@ -18,6 +18,8 @@
     "bootstrap": "^4.5.3",
     "gatsby": "^2.24.82",
     "gatsby-plugin-sass": "^2.3.18",
+    "gatsby-source-filesystem": "^2.3.35",
+    "gatsby-transformer-json": "^2.4.15",
     "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
