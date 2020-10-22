@@ -1,6 +1,7 @@
 import React from "react";
 import formatDate from "date-fns/format";
 import { toListText, toDateNum, toJsDate } from "../utils/helpers";
+import Score from "./score";
 
 export default function Snippet(props) {
    const { thumbnail, name, rating, premieredAt, genres, summary } = props.show;
@@ -10,27 +11,33 @@ export default function Snippet(props) {
    );
    return (
       <article className="row mb-7">
-         <div className="col-2">
+         <div className="col-4 col-sm-2">
             <img
                src={thumbnail}
                alt={`Promotional poster for ${name}`}
                className="img-fluid"
             />
+            <span className="d-sm-none float-right mt-3">
+               <Score size="sm" rating={rating} />
+            </span>
          </div>
-         <div className="col-8">
-            <h4>
-               {props.rank}. {name}
+         <div className="col-8 col-sm-10 col-md-8">
+            <h4 className="mb-2">
+               <span className="mr-2 mr-md-0">
+                  {props.rank}. {name}
+               </span>
+               <span className="d-none d-sm-inline d-md-none">
+                  {" "}
+                  <Score size="sm" rating={rating} />
+               </span>
             </h4>
             <p className="text-muted mb-3">
                {toListText(genres)} | Premiered on {friendlyPremieredAt}
             </p>
             <p>{summary}</p>
          </div>
-         <div className="col-2">
-            {/* <Rating size="lg" num={rating} /> */}
-            <span className="py-3 px-4 text-white lead rounded float-right bg-high">
-               {rating}
-            </span>
+         <div className="col-md-2 d-none d-md-block lead">
+            <Score size="md" rating={rating} />
          </div>
       </article>
    );
