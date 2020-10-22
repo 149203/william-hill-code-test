@@ -2,6 +2,7 @@ import React from "react";
 import formatDate from "date-fns/format";
 import { toListText, toDateNum, toJsDate } from "../utils/helpers";
 import Score from "./score";
+import { Link } from "gatsby";
 
 export default function Snippet(props) {
    const {
@@ -18,7 +19,7 @@ export default function Snippet(props) {
       "LLL. d, yyyy"
    );
    return (
-      <a href={`/${id}`}>
+      <Link to={`/${id}`}>
          <article className="row mb-7">
             <div className="col-4 col-sm-2">
                <img
@@ -50,6 +51,6 @@ export default function Snippet(props) {
                <Score size="md" rating={rating} />
             </div>
          </article>
-      </a>
+      </Link>
    );
 }
