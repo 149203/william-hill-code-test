@@ -16,7 +16,7 @@ export default function Layout({ children }) {
    );
    return (
       <>
-         <header className="w-100 bg-dark text-white pt-2 pb-1 mb-7 fixed-top">
+         <header className="w-100 bg-primary text-white pt-2 pb-1 mb-7">
             <div className="container">
                <div className="row">
                   <div className="col-12 col-xl-10 offset-xl-1">
@@ -38,7 +38,7 @@ export default function Layout({ children }) {
                </div>
             </div>
          </header>
-         <main className="container mt-10">
+         <main className="container">
             <div className="row">
                <div className="col-12 col-xl-10 offset-xl-1">{children}</div>
             </div>

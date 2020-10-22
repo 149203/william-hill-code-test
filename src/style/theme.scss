@@ -96,7 +96,7 @@ $colors: map-merge(
    $colors
 );
 
-$primary: $blue;
+$primary: $gray-800;
 $secondary: $gray-700;
 $info: $white;
 $success: $blue;
@@ -228,7 +228,7 @@ $input-btn-font-size-sm: $font-size-sm;
 $input-btn-line-height-sm: $line-height-base;
 
 $input-btn-padding-y-lg: map-get($spacers, 2);
-$input-btn-padding-x-lg: map-get($spacers, 6);
+$input-btn-padding-x-lg: map-get($spacers, 7);
 $input-btn-font-size-lg: $font-size-base;
 $input-btn-line-height-lg: $line-height-base;
 
@@ -239,7 +239,7 @@ $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color
 // BUTTONS
 
 $btn-font-weight: $font-weight-normal;
-$input-btn-font-family: $font-family-serif;
+$input-btn-font-family: $font-family-sans-serif;
 
 $btn-padding-y: $input-btn-padding-y;
 $btn-padding-x: $input-btn-padding-x;

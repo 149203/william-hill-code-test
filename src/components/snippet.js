@@ -36,7 +36,7 @@ export default function Snippet(props) {
             </p>
             <p>{summary}</p>
          </div>
-         <div className="col-md-2 d-none d-md-block lead">
+         <div className="col-md-2 d-none d-md-block">
             <Score size="md" rating={rating} />
          </div>
       </article>

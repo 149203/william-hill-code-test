@@ -36,3 +36,7 @@ export function toJsDate(eightDigitNum) {
    const day = Number(str.slice(6));
    return new Date(year, month, day);
 }
+
+export function stripTags(str) {
+   return str.replace(/<\/?[^>]+(>|$)/g, "");
+}
