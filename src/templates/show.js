@@ -1,6 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
-import { stripTags, toListText, toDateNum, toJsDate } from "../utils/helpers";
+import {
+   stripTags,
+   toListText,
+   toDateNum,
+   toJsDate,
+   truncate,
+} from "../utils/helpers";
 import Score from "../components/score";
 import formatDate from "date-fns/format";
 
@@ -24,7 +30,7 @@ export default function BlogPost(query) {
          <div className="row">
             <div className="col-3">
                <img
-                  src={image.original}
+                  src={image.medium}
                   alt={`Promotional poster for ${name}`}
                   className="img-fluid"
                />
@@ -39,10 +45,13 @@ export default function BlogPost(query) {
                      </p>
                   </div>
                   <div className="col-2">
-                     <Score size="md" rating={rating.average} />
+                     <Score
+                        size="md"
+                        rating={Math.round(rating.average * 10)}
+                     />
                   </div>
                </div>
-               <p className="mt-6">{stripTags(summary)}</p>
+               <p className="mt-5">{truncate(stripTags(summary), 700)}</p>
                <a
                   href={url}
                   target="_blank"
@@ -67,10 +76,23 @@ export const query = graphql`
          genres
          url
          image {
-            original
+            medium
          }
          rating {
             average
+         }
+         _embedded {
+            episodes {
+               id
+               url
+               name
+               season
+               number
+               image {
+                  medium
+               }
+               summary
+            }
          }
       }
    }

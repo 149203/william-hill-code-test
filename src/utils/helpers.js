@@ -40,3 +40,11 @@ export function toJsDate(eightDigitNum) {
 export function stripTags(str) {
    return str.replace(/<\/?[^>]+(>|$)/g, "");
 }
+
+export function truncate(str, len) {
+   if (str.length > len) {
+      return str.slice(0, len) + `...`;
+   } else {
+      return str;
+   }
+}

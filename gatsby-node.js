@@ -1,6 +1,10 @@
 const axios = require("axios");
 const path = require(`path`);
-const showIds = [5, 16149];
+const topSnippets = require("./data/topSnippets.json");
+
+const showIds = topSnippets.map((snippet) => {
+   return snippet.id;
+});
 
 module.exports.sourceNodes = async ({
    actions,
@@ -13,7 +17,7 @@ module.exports.sourceNodes = async ({
    let shows = [];
    for await (showId of showIds) {
       await axios
-         .get(`http://api.tvmaze.com/shows/${showId}`)
+         .get(`http://api.tvmaze.com/shows/${showId}?embed=episodes`)
          .then((res) => {
             shows = shows.concat(res.data);
          })
@@ -22,12 +26,10 @@ module.exports.sourceNodes = async ({
          });
    }
 
-   console.log(shows);
+   // console.log(shows);
 
    shows.forEach((show, i) => {
-      //create a string of that data
       const nodeContent = JSON.stringify(show);
-      //add geo to the index to create unique id
       const nodeMeta = {
          id: createNodeId(show.id),
          slug: show.id,
@@ -41,9 +43,7 @@ module.exports.sourceNodes = async ({
             contentDigest: createContentDigest(show),
          },
       };
-      //combining everything
       const node = Object.assign({}, show, nodeMeta);
-      //putting it in the GQL!
       createNode(node);
    });
 };
