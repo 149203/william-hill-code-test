@@ -19,7 +19,33 @@ export default function BlogPost(query) {
       premiered,
       genres,
       url,
+      _embedded,
    } = query.data.show;
+   const episodes = _embedded.episodes;
+   let seasons = [];
+   episodes.forEach((episode) => {
+      // get list of season numbers
+      const seasonNumbers = seasons.map((season) => {
+         return season.number;
+      });
+      // if episode season number is not in seasons
+      if (!seasonNumbers.includes(episode.season)) {
+         seasons = seasons.concat({
+            number: episode.season,
+            episodes: [episode],
+            isOpen: false,
+         });
+      } else {
+         const seasonIndex = seasons.findIndex((season) => {
+            return season.number === episode.season;
+         });
+         const targetSeason = seasons[seasonIndex];
+         const episodes = targetSeason.episodes.concat(episode);
+         targetSeason.episodes = episodes;
+      }
+   });
+   console.log(seasons);
+
    console.log(query.data.show);
    const friendlyPremieredAt = formatDate(
       toJsDate(toDateNum(premiered)),
@@ -60,6 +86,10 @@ export default function BlogPost(query) {
                >
                   View on TVmaze
                </a>
+            </div>
+
+            <div className="col-12 mt-7">
+               <h3>Season 1</h3>
             </div>
          </div>
       </Layout>
