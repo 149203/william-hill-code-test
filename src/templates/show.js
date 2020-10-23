@@ -126,7 +126,7 @@ export default class Show extends React.Component {
 
                {this.state.displayedSeasons.map((season) => {
                   return (
-                     <section className="col-12 mt-7">
+                     <section className="col-12 mt-7" key={season.number}>
                         <h3>Season {season.number}</h3>
                         <p className="text-muted mb-5">
                            {season.episodes.length} episode
@@ -136,7 +136,7 @@ export default class Show extends React.Component {
                         </p>
                         {season.episodes.map((episode) => {
                            return (
-                              <div className="row mb-7">
+                              <div className="row mb-7" key={episode.id}>
                                  <div className="col-3">
                                     {this.displayScreenshot(episode)}
                                  </div>
