@@ -1,10 +1,12 @@
 const axios = require("axios");
 const path = require(`path`);
 const topSnippets = require("./data/topSnippets.json");
+const take = require("lodash/take");
 
-const showIds = topSnippets.map((snippet) => {
+let showIds = topSnippets.map((snippet) => {
    return snippet.id;
 });
+// showIds = take(showIds, 3); // uncomment for faster testing
 
 module.exports.sourceNodes = async ({
    actions,
@@ -35,6 +37,7 @@ module.exports.sourceNodes = async ({
          slug: show.id,
          parent: null,
          children: [],
+
          internal: {
             //gives internal typing for GraphQL
             type: `show`,
@@ -44,6 +47,7 @@ module.exports.sourceNodes = async ({
          },
       };
       const node = Object.assign({}, show, nodeMeta);
+
       createNode(node);
    });
 };
@@ -61,7 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
          }
       }
    `);
-   console.log(JSON.stringify(result, null, 4));
+   // console.log(JSON.stringify(result, null, 4));
    result.data.allShow.edges.forEach(({ node }) => {
       createPage({
          path: "/" + node.slug + "/",
@@ -74,3 +78,32 @@ exports.createPages = async ({ graphql, actions }) => {
       });
    });
 };
+
+// function createImageObjectFromURL(url) {
+//    const lastIndexOfSlash = url.lastIndexOf("/");
+//    const id = url.slice(lastIndexOfSlash + 1, url.lastIndexOf("."));
+//    return { id, image: id, url };
+// }
+
+// function turnImageObjectIntoGatsbyNode(image, episode) {
+//    const content = {
+//       content: episode.name,
+//       ["image___NODE"]: createNodeId(`episode-image-{${image.id}}`),
+//    };
+//    const nodeId = createNodeId(`image-{${image.id}}`);
+//    const nodeContent = JSON.stringify(image);
+
+//    const nodeData = {
+//       ...image,
+//       ...content,
+//       id: nodeId,
+//       parent: null,
+//       children: [],
+//       internal: {
+//          type: "Image",
+//          content: nodeContent,
+//          contentDigest: createContentDigest(image.id),
+//       },
+//    };
+//    return nodeData;
+// }
