@@ -24,5 +24,14 @@ module.exports = {
          },
       },
       `gatsby-transformer-json`,
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-sharp`,
+      {
+         resolve: `gatsby-plugin-remote-images`,
+         options: {
+            nodeType: "myImages",
+            imagePath: "imageUrl",
+         },
+      },
    ],
 };
