@@ -71,39 +71,9 @@ exports.createPages = async ({ graphql, actions }) => {
          path: "/" + node.slug + "/",
          component: path.resolve(`./src/templates/show.js`),
          context: {
-            // Data passed to context is available
-            // in page queries as GraphQL variables.
+            // Data passed to context is available in page queries as GraphQL variables
             slug: node.slug,
          },
       });
    });
 };
-
-// function createImageObjectFromURL(url) {
-//    const lastIndexOfSlash = url.lastIndexOf("/");
-//    const id = url.slice(lastIndexOfSlash + 1, url.lastIndexOf("."));
-//    return { id, image: id, url };
-// }
-
-// function turnImageObjectIntoGatsbyNode(image, episode) {
-//    const content = {
-//       content: episode.name,
-//       ["image___NODE"]: createNodeId(`episode-image-{${image.id}}`),
-//    };
-//    const nodeId = createNodeId(`image-{${image.id}}`);
-//    const nodeContent = JSON.stringify(image);
-
-//    const nodeData = {
-//       ...image,
-//       ...content,
-//       id: nodeId,
-//       parent: null,
-//       children: [],
-//       internal: {
-//          type: "Image",
-//          content: nodeContent,
-//          contentDigest: createContentDigest(image.id),
-//       },
-//    };
-//    return nodeData;
-// }

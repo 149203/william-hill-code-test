@@ -23,15 +23,12 @@ export default class Home extends React.Component {
       this.setState((prevState) => {
          return {
             searchInput,
-            displayedSnippets: getNewSnippets(),
-         };
-         function getNewSnippets() {
-            return prevState.snippets.filter((snippet) => {
+            displayedSnippets: prevState.snippets.filter((snippet) => {
                return snippet.name
                   .toLowerCase()
                   .includes(searchInput.toLowerCase());
-            });
-         }
+            }),
+         };
       });
    }
 
