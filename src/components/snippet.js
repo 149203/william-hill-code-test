@@ -7,7 +7,7 @@ export default function Snippet(props) {
    const { thumbnail, name, rating, summary, id } = props.show;
 
    return (
-      <Link to={`/${id}`}>
+      <Link to={`/${id}`} title={name}>
          <article className="row mb-7">
             <div className="col-12 d-sm-none">
                <SnippetTitle show={props.show} />
