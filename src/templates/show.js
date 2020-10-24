@@ -11,6 +11,7 @@ import {
 import Score from "../components/score";
 import formatDate from "date-fns/format";
 import searchIcon from "../icons/search.svg";
+import isEmpty from "lodash/isEmpty";
 
 export default class Show extends React.Component {
    constructor(props) {
@@ -20,8 +21,45 @@ export default class Show extends React.Component {
       this.state = {
          seasons,
          displayedSeasons: seasons,
+         searchInput: "",
       };
+      this.getSeasons = this.getSeasons.bind(this);
    }
+
+   setSearch(e) {
+      const searchInput = e.target.value;
+      this.setState((prevState) => {
+         return {
+            searchInput,
+            displayedSeasons: getSeasons(),
+         };
+         function getSeasons() {
+            let seasons = [];
+            prevState.seasons.forEach((season) => {
+               let episodes = [];
+               season.episodes.forEach((episode) => {
+                  const lowerCasedInput = searchInput.toLowerCase();
+                  const episodeName = episode.name.toLowerCase();
+                  const episodeSummary = episode.summary.toLowerCase();
+                  if (
+                     episodeName.includes(lowerCasedInput) ||
+                     episodeSummary.includes(lowerCasedInput)
+                  ) {
+                     episodes = episodes.concat(episode);
+                  }
+               });
+               season.episodes = episodes;
+               if (episodes.length > 0) {
+                  seasons = seasons.concat(season);
+               }
+            });
+            console.log(seasons);
+            return seasons;
+         }
+      });
+   }
+
+   getSeasons(prevState, searchInput) {}
 
    toShowDate(yyyy_mm_dd) {
       return formatDate(toJsDate(toDateNum(yyyy_mm_dd)), "LLL. d, yyyy");
@@ -174,6 +212,9 @@ export default class Show extends React.Component {
                   <input
                      className="form-control ml-4"
                      placeholder="Search for an episode"
+                     onChange={(e) => {
+                        this.setSearch(e);
+                     }}
                   />
                </div>
 
