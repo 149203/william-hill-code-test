@@ -11,7 +11,7 @@ import {
 import Score from "../components/score";
 import formatDate from "date-fns/format";
 import searchIcon from "../icons/search.svg";
-import isEmpty from "lodash/isEmpty";
+import cloneDeep from "lodash/cloneDeep";
 
 export default class Show extends React.Component {
    constructor(props) {
@@ -23,7 +23,6 @@ export default class Show extends React.Component {
          displayedSeasons: seasons,
          searchInput: "",
       };
-      this.getSeasons = this.getSeasons.bind(this);
    }
 
    setSearch(e) {
@@ -35,15 +34,14 @@ export default class Show extends React.Component {
          };
          function getSeasons() {
             let seasons = [];
-            prevState.seasons.forEach((season) => {
+            const copyOfSeasons = cloneDeep(prevState.seasons);
+            copyOfSeasons.forEach((season) => {
                let episodes = [];
                season.episodes.forEach((episode) => {
                   const lowerCasedInput = searchInput.toLowerCase();
-                  const episodeName = episode.name.toLowerCase();
-                  const episodeSummary = episode.summary.toLowerCase();
                   if (
-                     episodeName.includes(lowerCasedInput) ||
-                     episodeSummary.includes(lowerCasedInput)
+                     episode.name.toLowerCase().includes(lowerCasedInput) ||
+                     episode.summary.toLowerCase().includes(lowerCasedInput)
                   ) {
                      episodes = episodes.concat(episode);
                   }
@@ -53,13 +51,10 @@ export default class Show extends React.Component {
                   seasons = seasons.concat(season);
                }
             });
-            console.log(seasons);
             return seasons;
          }
       });
    }
-
-   getSeasons(prevState, searchInput) {}
 
    toShowDate(yyyy_mm_dd) {
       return formatDate(toJsDate(toDateNum(yyyy_mm_dd)), "LLL. d, yyyy");
