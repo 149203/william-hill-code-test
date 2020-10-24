@@ -10,7 +10,7 @@ export default function Snippet(props) {
       <Link to={`/${id}`}>
          <article className="row mb-7">
             <div className="col-12 d-sm-none">
-               <SnippetTitle show={props.show} rank={props.rank} />
+               <SnippetTitle show={props.show} />
             </div>
             <div className="col-4 col-sm-2">
                <img
@@ -24,7 +24,7 @@ export default function Snippet(props) {
             </div>
             <div className="col-8 col-sm-10 col-md-8">
                <div className="d-none d-sm-block">
-                  <SnippetTitle show={props.show} rank={props.rank} />
+                  <SnippetTitle show={props.show} />
                </div>
                <p>{summary}</p>
             </div>

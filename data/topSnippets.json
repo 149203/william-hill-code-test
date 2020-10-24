@@ -7,7 +7,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/236/591889.jpg",
       "genres": ["Travel"],
       "summary": "From the locomotive to rail traffic control to the maintenance depot, Mighty Trains takes audiences on a journey riding the rails around the world. We will follow the engineers and conductors as they navigate their way t...",
-      "language": "English"
+      "language": "English",
+      "rank": 1
    },
    {
       "id": 82,
@@ -17,7 +18,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/190/476117.jpg",
       "genres": ["Drama", "Adventure", "Fantasy"],
       "summary": "Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and th...",
-      "language": "English"
+      "language": "English",
+      "rank": 2
    },
    {
       "id": 32,
@@ -27,7 +29,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/267/669639.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "Fargo is a seasonal anthology crime drama with some dark comical elements, inspired by the film Fargo written by the Coen brothers. Each season follows a new case and new characters, all entrenched in the trademark humor...",
-      "language": "English"
+      "language": "English",
+      "rank": 3
    },
    {
       "id": 2,
@@ -37,7 +40,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg",
       "genres": ["Action", "Crime", "Science-Fiction"],
       "summary": "You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent c...",
-      "language": "English"
+      "language": "English",
+      "rank": 4
    },
    {
       "id": 106,
@@ -47,7 +51,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/808.jpg",
       "genres": ["Drama", "Crime", "Western"],
       "summary": "Deputy U.S. Marshal Raylan Givens is something of a 19th century-style officer in modern times, whose unconventional enforcement of justice makes him a target with criminals and a problem for his superiors in the U.S. Ma...",
-      "language": "English"
+      "language": "English",
+      "rank": 5
    },
    {
       "id": 4037,
@@ -57,7 +62,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/19/49604.jpg",
       "genres": ["Children"],
       "summary": "While Alex, Marty, Gloria, and Melman are still relaxing in Africa, the four penguins: Skipper, Kowalski, Private and Rico, have returned to New York City in Central Park Zoo. The Penguins will rule the roost at their Ce...",
-      "language": "English"
+      "language": "English",
+      "rank": 6
    },
    {
       "id": 29,
@@ -67,7 +73,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/214/536315.jpg",
       "genres": ["Drama", "Action", "History"],
       "summary": "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.",
-      "language": "English"
+      "language": "English",
+      "rank": 7
    },
    {
       "id": 76,
@@ -77,7 +84,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/537.jpg",
       "genres": ["Drama", "Action", "Crime"],
       "summary": "Sons of Anarchy is an American television drama series created by Kurt Sutter, about the lives of a close-knit outlaw motorcycle club operating in Charming, a fictional town in California's Central Valley. The show cente...",
-      "language": "English"
+      "language": "English",
+      "rank": 8
    },
    {
       "id": 61,
@@ -87,7 +95,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/53/132716.jpg",
       "genres": ["Drama", "Science-Fiction", "Thriller"],
       "summary": "Orphan Black is about Sarah, an outsider and orphan whose life changes dramatically after witnessing the suicide of a woman, \"Beth\", who looks just like her. Sarah takes her identity, her boyfriend and her money. But ins...",
-      "language": "English"
+      "language": "English",
+      "rank": 9
    },
    {
       "id": 64,
@@ -97,7 +106,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/275/688620.jpg",
       "genres": ["Drama", "Science-Fiction", "Thriller"],
       "summary": "Utopia based initially around a small group of people who find a rare manuscript of the same name. This leads the group to be targeted by a large organisation with little knowledge of the manuscript's relevance or import...",
-      "language": "English"
+      "language": "English",
+      "rank": 10
    },
    {
       "id": 102,
@@ -107,7 +117,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/759.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "As the country struggles to cope with the Great Depression and the end of Prohibition looms, Nucky Thompson looks to legitimize himself through alliances with liquor producers, while rivals Lucky Luciano and Meyer Lansky...",
-      "language": "English"
+      "language": "English",
+      "rank": 11
    },
    {
       "id": 4042,
@@ -117,7 +128,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/19/49618.jpg",
       "genres": ["Comedy", "Family", "Horror"],
       "summary": "The Addams Family is the creation of American cartoonist Charles Addams. A satirical inversion of the ideal of the perfect American nuclear family, they are an eccentric wealthy family who delight in everything grotesque...",
-      "language": "English"
+      "language": "English",
+      "rank": 12
    },
    {
       "id": 8356,
@@ -127,7 +139,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/29/74996.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "The Take is a four episode British drama TV series on Sky 1 based upon the Martina Cole novel. Shooting for the show took place in Dublin. The show premiered on 17 June 2009 and stars Tom Hardy, Brian Cox, Hayley Angel H...",
-      "language": "English"
+      "language": "English",
+      "rank": 13
    },
    {
       "id": 13105,
@@ -137,7 +150,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/100/251753.jpg",
       "genres": ["Drama", "Action", "Crime"],
       "summary": "60 Days In following seven innocent participants who enter the dangerous world of incarceration at the Clark County Jail in Jeffersonville, Indiana, in an effort to expose internal issues and what really happens behind b...",
-      "language": "English"
+      "language": "English",
+      "rank": 14
    },
    {
       "id": 10,
@@ -147,7 +161,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/69/174906.jpg",
       "genres": ["Drama", "Crime", "Supernatural"],
       "summary": "Grimm is a drama series inspired by the classic Grimm Brothers' Fairy Tales. After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms\", he increa...",
-      "language": "English"
+      "language": "English",
+      "rank": 15
    },
    {
       "id": 51,
@@ -157,7 +172,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/417.jpg",
       "genres": ["Drama", "Medical"],
       "summary": "New York City, 1900: The Knickerbocker Hospital is home to groundbreaking surgeons, nurses and staff who push the boundaries of medicine in a time of astonishingly high mortality rates and zero antibiotics. The newly app...",
-      "language": "English"
+      "language": "English",
+      "rank": 16
    },
    {
       "id": 74,
@@ -167,7 +183,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/526.jpg",
       "genres": ["Drama", "Action", "Western"],
       "summary": "Hell on Wheels is an American Western television series about the construction of the First Transcontinental Railroad across the United States. The series follows the Union Pacific Railroad and its surveyors, laborers, p...",
-      "language": "English"
+      "language": "English",
+      "rank": 17
    },
    {
       "id": 101,
@@ -177,7 +194,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/59/148162.jpg",
       "genres": ["Drama", "Crime", "Legal"],
       "summary": "The Good Wife follows Alicia Florrick, a wife and mother who boldly assumes full responsibility for her family and re-enters the workforce after her husband's very public sex and political corruption scandal lands him in...",
-      "language": "English"
+      "language": "English",
+      "rank": 18
    },
    {
       "id": 19,
@@ -187,7 +205,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg",
       "genres": ["Drama", "Action", "Supernatural"],
       "summary": "This haunting series follows the Winchester brothers as they crisscross the lonely and mysterious back roads of the country in their '67 Chevy Impala, hunting down every evil supernatural force they encounter along the w...",
-      "language": "English"
+      "language": "English",
+      "rank": 19
    },
    {
       "id": 56,
@@ -197,7 +216,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/277/693380.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "District 21 of the Chicago Police Department is made up of two distinctly different groups. There are the uniformed cops who patrol the beat and go head to head with the city's street crimes. And there's the Intelligence...",
-      "language": "English"
+      "language": "English",
+      "rank": 20
    },
    {
       "id": 59,
@@ -207,7 +227,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/277/693381.jpg",
       "genres": ["Drama", "Action"],
       "summary": "No job is more stressful, dangerous or exhilarating than those of the Firefighters, Rescue Squad and Paramedics of Chicago Firehouse 51. These are the courageous men and women who forge headfirst into danger when everyon...",
-      "language": "English"
+      "language": "English",
+      "rank": 21
    },
    {
       "id": 100,
@@ -217,7 +238,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/237/592580.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "Blue Bloods is a drama about a multi-generational family of cops dedicated to New York City law enforcement. Frank Reagan is the New York Police Commissioner and heads both the police force and the Reagan brood. He runs ...",
-      "language": "English"
+      "language": "English",
+      "rank": 22
    },
    {
       "id": 109,
@@ -227,7 +249,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/887.jpg",
       "genres": ["Drama", "Action", "Crime"],
       "summary": "CSI: Crime Scene Investigation is a drama about a team of forensic investigators trained to solve criminal cases by scouring the crime scene, collecting irrefutable evidence and finding the missing pieces that solve the ...",
-      "language": "English"
+      "language": "English",
+      "rank": 23
    },
    {
       "id": 11822,
@@ -237,7 +260,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/139/347977.jpg",
       "genres": ["Drama"],
       "summary": "Drama series about a well-respected Catholic priest presiding over a large parish on the outskirts of a major city in northern England.",
-      "language": "English"
+      "language": "English",
+      "rank": 24
    },
    {
       "id": 16149,
@@ -247,7 +271,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/192/482341.jpg",
       "genres": ["Drama", "Comedy"],
       "summary": "Meet Fleabag. She's not talking to all of us - she's talking to you. So why don't you pop your top off and come right in?",
-      "language": "English"
+      "language": "English",
+      "rank": 25
    },
    {
       "id": 5,
@@ -257,7 +282,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/178/445621.jpg",
       "genres": ["Drama", "Crime", "Thriller"],
       "summary": "Touch darkness and darkness touches you back. True Detective centers on troubled cops and the investigations that drive them to the edge. Each season features a new cast and a new case.",
-      "language": "English"
+      "language": "English",
+      "rank": 26
    },
    {
       "id": 16,
@@ -267,7 +293,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/48/122237.jpg",
       "genres": ["Horror", "Thriller", "Supernatural"],
       "summary": "Some of literature's most terrifying characters, including Dr. Frankenstein and his monster, Dorian Gray, and iconic figures from the novel Dracula are lurking in the darkest corners of Victorian London. They are joined ...",
-      "language": "English"
+      "language": "English",
+      "rank": 27
    },
    {
       "id": 35,
@@ -277,7 +304,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/216/540157.jpg",
       "genres": ["Drama", "Crime", "Thriller"],
       "summary": "The Killing follows Seattle homicide detectives Stephen Holder and Sarah Linden and their work as detectives investigating murders. Sarah Linden takes cases very seriously and has issues keeping her work and family separ...",
-      "language": "English"
+      "language": "English",
+      "rank": 28
    },
    {
       "id": 46,
@@ -287,7 +315,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/383.jpg",
       "genres": ["Drama", "Crime", "Supernatural"],
       "summary": "Doctor Henry Morgan, New York City's star medical examiner, has a secret. He doesn't just study the dead to solve criminal cases, he does it to solve the mystery that has eluded him for 200 years - the answer to his own ...",
-      "language": "English"
+      "language": "English",
+      "rank": 29
    },
    {
       "id": 60,
@@ -297,7 +326,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/278/695962.jpg",
       "genres": ["Drama", "Action", "Crime"],
       "summary": "NCIS (Naval Criminal Investigative Service) is more than just an action drama. With liberal doses of humor, it's a show that focuses on the sometimes complex and always amusing dynamics of a team forced to work together ...",
-      "language": "English"
+      "language": "English",
+      "rank": 30
    },
    {
       "id": 62,
@@ -307,7 +337,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/156/391233.jpg",
       "genres": ["Drama", "Romance", "Supernatural"],
       "summary": "The Originals is a spin-off show from the supernatural drama The Vampire Diaries. It is based in the city of New Orleans where the originals represent the original vampires. The show is primarily based around conflict be...",
-      "language": "English"
+      "language": "English",
+      "rank": 31
    },
    {
       "id": 68,
@@ -317,7 +348,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/490.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "Castle follows Rick Castle who is one of the world's most successful crime authors. But when his rock star lifestyle isn't enough, this bad boy goes looking for new trouble and finds it working with smart, beautiful Dete...",
-      "language": "English"
+      "language": "English",
+      "rank": 32
    },
    {
       "id": 83,
@@ -327,7 +359,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/271/679902.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "The Simpsons is the longest running scripted show in US television history. It captures the adventures of Homer, Marge, Maggie, Bart and Lisa who are living in a fictional town called Springfield.",
-      "language": "English"
+      "language": "English",
+      "rank": 33
    },
    {
       "id": 103,
@@ -337,7 +370,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/227/567829.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "In the criminal justice system, sexually-based offenses are considered especially heinous. In New York City, the dedicated detectives who investigate these vicious felonies are members of an elite squad known as the Spec...",
-      "language": "English"
+      "language": "English",
+      "rank": 34
    },
    {
       "id": 7259,
@@ -347,7 +381,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/27/67561.jpg",
       "genres": ["Drama", "Espionage"],
       "summary": "Acclaimed adaptation of John le Carre's novel about spy George Smiley, who is recalled from retirement.",
-      "language": "English"
+      "language": "English",
+      "rank": 35
    },
    {
       "id": 7,
@@ -357,7 +392,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/230/575652.jpg",
       "genres": ["Drama", "Thriller", "Espionage"],
       "summary": "The winner of 6 Emmy Awards including Outstanding Drama Series, Homeland is an edge-of-your-seat sensation. Marine Sergeant Nicholas Brody is both a decorated hero and a serious threat. CIA officer Carrie Mathison is top...",
-      "language": "English"
+      "language": "English",
+      "rank": 36
    },
    {
       "id": 14,
@@ -367,7 +403,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/184.jpg",
       "genres": ["Drama", "Crime", "Science-Fiction"],
       "summary": "Continuum is a one-hour police drama centered on Kiera Cameron, a regular cop from 65 years in the future who finds herself trapped in present day Vancouver. She is alone, a stranger in a strange land, and has eight of t...",
-      "language": "English"
+      "language": "English",
+      "rank": 37
    },
    {
       "id": 49,
@@ -377,7 +414,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/235/587547.jpg",
       "genres": ["Comedy", "Action", "Crime"],
       "summary": "Brooklyn Nine-Nine is an ensemble comedy about a talented-but-carefree detective, a by-the-book police captain and their precinct colleagues. While based in the workplace, Brooklyn Nine-Nine is not really about the job –...",
-      "language": "English"
+      "language": "English",
+      "rank": 38
    },
    {
       "id": 65,
@@ -387,7 +425,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/80/201202.jpg",
       "genres": ["Drama", "Crime", "Medical"],
       "summary": "F.B.I. Agent Seeley Booth is teamed up with forensic anthropologist Dr. Temperance \"Bones\" Brennan to solve some of the most baffling and bizarre crimes ever. Booth depends on clues from the living, witnesses and suspect...",
-      "language": "English"
+      "language": "English",
+      "rank": 39
    },
    {
       "id": 69,
@@ -397,7 +436,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/232/580032.jpg",
       "genres": ["Drama", "Crime", "Thriller"],
       "summary": "The Blacklist is a crime drama involving a former government agent who turned into a high-profile criminal turning himself in to the FBI offering to help catch criminals.",
-      "language": "English"
+      "language": "English",
+      "rank": 40
    },
    {
       "id": 81,
@@ -407,7 +447,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/237/592589.jpg",
       "genres": ["Drama", "Crime", "Thriller"],
       "summary": "Criminal Minds revolves around an elite team of FBI profilers who analyze the country's most twisted criminal minds, anticipating their next moves before they strike again.",
-      "language": "English"
+      "language": "English",
+      "rank": 41
    },
    {
       "id": 90,
@@ -417,7 +458,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/672.jpg",
       "genres": ["Drama", "Crime", "Supernatural"],
       "summary": "When FBI Special Agent Audrey Parker is dispatched to the small town of Haven, Maine, on a routine case, she soon finds herself increasingly involved in the return of \"The Troubles\", a plague of supernatural afflictions ...",
-      "language": "English"
+      "language": "English",
+      "rank": 42
    },
    {
       "id": 11402,
@@ -427,7 +469,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/50/125685.jpg",
       "genres": ["Drama"],
       "summary": "The series is the story of the Hughes family, who work and love and fight like every other family. Then their youngest son is diagnosed with autism and they don't feel like every other family anymore. They realise that i...",
-      "language": "English"
+      "language": "English",
+      "rank": 43
    },
    {
       "id": 12,
@@ -437,7 +480,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/137.jpg",
       "genres": ["Drama", "Fantasy", "Horror"],
       "summary": "Lost Girl follows supernatural seductress Bo, a Succubus who feeds on the sexual energy of humans. Growing up with human parents, Bo had no reason to believe she was anything other than the girl next door — until she dra...",
-      "language": "English"
+      "language": "English",
+      "rank": 44
    },
    {
       "id": 43,
@@ -447,7 +491,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/234/586470.jpg",
       "genres": ["Adventure", "Romance", "Science-Fiction"],
       "summary": "Outlander follows the story of Claire Randall, a married combat nurse from 1945 who is mysteriously swept back in time to 1743, where she is immediately thrown into an unknown world where her life is threatened. When she...",
-      "language": "English"
+      "language": "English",
+      "rank": 45
    },
    {
       "id": 72,
@@ -457,7 +502,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/237/592626.jpg",
       "genres": ["Drama", "Action", "Crime"],
       "summary": "NCIS: Los Angeles is a drama about the high-stakes world of a division of NCIS that is charged with apprehending dangerous and elusive criminals that pose a threat to the nation's security. By assuming false identities a...",
-      "language": "English"
+      "language": "English",
+      "rank": 46
    },
    {
       "id": 73,
@@ -467,7 +513,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/238/596840.jpg",
       "genres": ["Drama", "Action", "Horror"],
       "summary": "The Walking Dead tells the story of the months and years that follow after a zombie apocalypse. It follows a group of survivors, led by former police officer Rick Grimes, who travel in search of a safe and secure home. A...",
-      "language": "English"
+      "language": "English",
+      "rank": 47
    },
    {
       "id": 107,
@@ -477,7 +524,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/840.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "The series follows Bob who runs Bob's Burgers, with the help of his wife and their three kids. Bob has big ideas about burgers, but the rest of the clan falls short on service. Despite the greasy counters and lousy locat...",
-      "language": "English"
+      "language": "English",
+      "rank": 48
    },
    {
       "id": 12341,
@@ -487,7 +535,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/73/182741.jpg",
       "genres": ["Drama", "Romance"],
       "summary": "On Gaycation, Ellen Page and her best friend, Ian Daniel, set off on a personal journey to explore LGBTQ cultures around the world. From Japan to Brazil, Jamaica and here in America, Ellen and Ian discover the multiplici...",
-      "language": "English"
+      "language": "English",
+      "rank": 49
    },
    {
       "id": 28,
@@ -497,7 +546,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/38/95017.jpg",
       "genres": ["Drama", "Comedy"],
       "summary": "Californication is a series based around the writer Hank Moody. He moves to California and suffers a writers block as well as many other family and personal issues. His drinking and generally unhealthy lifestyle interrup...",
-      "language": "English"
+      "language": "English",
+      "rank": 50
    },
    {
       "id": 31,
@@ -507,7 +557,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/253/634071.jpg",
       "genres": ["Action", "Adventure", "Science-Fiction"],
       "summary": "Phil Coulson heads an elite team of fellow agents with the worldwide law-enforcement organization known as S.H.I.E.L.D. (Strategic Homeland Intervention Enforcement and Logistics Division), as they investigate strange oc...",
-      "language": "English"
+      "language": "English",
+      "rank": 51
    },
    {
       "id": 63,
@@ -517,7 +568,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/88/220908.jpg",
       "genres": ["Drama", "Romance", "Supernatural"],
       "summary": "The Vampire Diaries is a supernatural drama/romance based around Elena Gilbert who falls in love with a 163 year old vampire.Based on a novel series by L.J. Smith.",
-      "language": "English"
+      "language": "English",
+      "rank": 52
    },
    {
       "id": 67,
@@ -527,7 +579,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/273/684728.jpg",
       "genres": ["Drama", "Romance", "Medical"],
       "summary": "The doctors of Grey Sloan Memorial Hospital deal with life-or-death consequences on a daily basis -- it's in one another that they find comfort, friendship and, at times, more than friendship. Together they're discoverin...",
-      "language": "English"
+      "language": "English",
+      "rank": 53
    },
    {
       "id": 93,
@@ -537,7 +590,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/685.jpg",
       "genres": ["Drama", "Comedy", "Family"],
       "summary": "Parenthood is the critically acclaimed one-hour drama inspired by the box office hit of the same name. This reimagined and updated Universal Television/Imagine Entertainment production follows the trials and tribulations...",
-      "language": "English"
+      "language": "English",
+      "rank": 54
    },
    {
       "id": 7261,
@@ -547,7 +601,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/27/67564.jpg",
       "genres": ["Drama"],
       "summary": "Claire Foy and Christian Cooke star in Peter Kosminsky's four-part drama serial. Eighteen-year-old Erin sets out on an emotional journey when she retraces her grandfather's footsteps.",
-      "language": "English"
+      "language": "English",
+      "rank": 55
    },
    {
       "id": 33320,
@@ -557,7 +612,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/184/460240.jpg",
       "genres": ["Comedy"],
       "summary": "16-year-old Erin Quinn lives with her uncompromising mother, her long-suffering father and the fearsome ‘Granda Joe', a man whose love for his daughters and granddaughters is surpassed only by his contempt for his son-in...",
-      "language": "English"
+      "language": "English",
+      "rank": 56
    },
    {
       "id": 13,
@@ -567,7 +623,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/267/669878.jpg",
       "genres": ["Drama", "Action", "Science-Fiction"],
       "summary": "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move throug...",
-      "language": "English"
+      "language": "English",
+      "rank": 57
    },
    {
       "id": 18,
@@ -577,7 +634,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/237/592579.jpg",
       "genres": ["Action", "Adventure", "Family"],
       "summary": "From athletes and actors to tattoo artists, social workers and musicians - a diverse mix of teams will need to utilize their street smarts and savvy know-how to compete in the race of their lifetime.",
-      "language": "English"
+      "language": "English",
+      "rank": 58
    },
    {
       "id": 22,
@@ -587,7 +645,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/236/590987.jpg",
       "genres": ["Drama", "Romance", "Supernatural"],
       "summary": "True Blood is a horror/drama based on a series of novels called The Southern American Vampires Mysteries. It focuses on Sookie Stackhouse and her various encounters with vampires and other supernatural beings. The show i...",
-      "language": "English"
+      "language": "English",
+      "rank": 59
    },
    {
       "id": 41,
@@ -597,7 +656,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/225/563735.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "Last Man Standing follows Mike Baxter, a married father of three girls, who tries to maintain his manliness, despite being surrounded by women.",
-      "language": "English"
+      "language": "English",
+      "rank": 60
    },
    {
       "id": 66,
@@ -607,7 +667,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg",
       "genres": ["Comedy"],
       "summary": "The Big Bang Theory is a comedy about brilliant physicists, Leonard and Sheldon, who are the kind of \"beautiful minds\" that understand how the universe works. But none of that genius helps them interact with people, espe...",
-      "language": "English"
+      "language": "English",
+      "rank": 61
    },
    {
       "id": 77,
@@ -617,7 +678,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/562.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "Forget about athletes, movie stars and politicians. Parents are the real heroes - but we think Frankie Heck, must be some kind of superhero. A loving wife and mother of three, she's middle class in the middle of the coun...",
-      "language": "English"
+      "language": "English",
+      "rank": 62
    },
    {
       "id": 98,
@@ -627,7 +689,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/124/310268.jpg",
       "genres": ["Drama", "Thriller"],
       "summary": "Everyone has secrets… and Olivia Pope has dedicated her life to protecting and defending the public images of the nation's elite by keeping those secrets under wraps. Pope's team are at the top of their game when it come...",
-      "language": "English"
+      "language": "English",
+      "rank": 63
    },
    {
       "id": 11401,
@@ -637,7 +700,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/187/469215.jpg",
       "genres": ["Drama", "Action", "Western"],
       "summary": "The Son, from writers/producers Philipp Meyer, Lee Shipman &amp; Brian McGreevy and producer Michael Connolly, is a multi-generational epic telling of the story of America's birth as a superpower through the bloody rise ...",
-      "language": "English"
+      "language": "English",
+      "rank": 64
    },
    {
       "id": 9,
@@ -647,7 +711,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/82/206879.jpg",
       "genres": ["Drama", "Thriller", "Mystery"],
       "summary": "This is not a story about forgiveness; Revenge is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was fr...",
-      "language": "English"
+      "language": "English",
+      "rank": 65
    },
    {
       "id": 30,
@@ -657,7 +722,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/209/523439.jpg",
       "genres": ["Drama", "Horror", "Thriller"],
       "summary": "American Horror Story is an horror television anthology series. Each season is conceived as a self-contained miniseries, following a disparate set of characters and settings, and a storyline with its own beginning, middl...",
-      "language": "English"
+      "language": "English",
+      "rank": 66
    },
    {
       "id": 45,
@@ -667,7 +733,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/237/592628.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "NCIS: New Orleans is a drama about the local field office that investigates criminal cases involving military personnel in The Big Easy, a city known for its music, entertainment and decadence. Leading the team is Specia...",
-      "language": "English"
+      "language": "English",
+      "rank": 67
    },
    {
       "id": 48,
@@ -677,7 +744,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/214/536175.jpg",
       "genres": ["Drama"],
       "summary": "Madam Secretary follows Elizabeth McCord, the shrewd, determined, newly appointed Secretary of State who drives international diplomacy, battles office politics and circumvents protocol as she negotiates global and domes...",
-      "language": "English"
+      "language": "English",
+      "rank": 68
    },
    {
       "id": 84,
@@ -687,7 +755,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/271/679903.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "Family Guy follows Peter Griffin the endearingly ignorant dad, and his hilariously offbeat family of middle-class New Englanders in Quahog, RI. Lois is Peter's wife, a stay-at-home mom with no patience for her family's a...",
-      "language": "English"
+      "language": "English",
+      "rank": 69
    },
    {
       "id": 4039,
@@ -697,7 +766,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/19/49606.jpg",
       "genres": ["Adventure", "Children"],
       "summary": "Kung Fu Panda: Legends of Awesomeness is based on DreamWorks Animation's hit feature film, Kung Fu Panda which has grossed over $630 million at the worldwide box office and became the studio's most successful original fe...",
-      "language": "English"
+      "language": "English",
+      "rank": 70
    },
    {
       "id": 6,
@@ -707,7 +777,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/257/642675.jpg",
       "genres": ["Action", "Adventure", "Science-Fiction"],
       "summary": "Ninety-seven years ago, nuclear Armageddon decimated planet Earth, destroying civilization. The only survivors were the 400 inhabitants of 12 international space stations that were in orbit at the time. Three generations...",
-      "language": "English"
+      "language": "English",
+      "rank": 71
    },
    {
       "id": 11,
@@ -717,7 +788,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/189/474715.jpg",
       "genres": ["Drama", "Action", "Crime"],
       "summary": "The good. The evil. The beginning.Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story an...",
-      "language": "English"
+      "language": "English",
+      "rank": 72
    },
    {
       "id": 79,
@@ -727,7 +799,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/272/681971.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "Before there were parenting blogs, trophies for showing up and peanut allergies, there was a simpler time called the '80s. For geeky and movie obsessed youngest child Adam, these were his wonder years, and he faced them ...",
-      "language": "English"
+      "language": "English",
+      "rank": 73
    },
    {
       "id": 94,
@@ -737,7 +810,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/700.jpg",
       "genres": ["Action", "Adventure", "Science-Fiction"],
       "summary": "Set on a future Earth, Defiance introduces players and viewers to a world where humans and aliens live together on a planet ravaged by decades of war and transformed by alien terra-forming machines. It centers on Jeb Nol...",
-      "language": "English"
+      "language": "English",
+      "rank": 74
    },
    {
       "id": 24,
@@ -747,7 +821,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/213/532575.jpg",
       "genres": ["Drama", "Action", "Crime"],
       "summary": "Hawaii Five-0 is a contemporary take on the classic series about a new elite federalized task force whose mission is to wipe out the crime that washes up on the Islands' sun-drenched beaches. Detective Steve McGarrett, a...",
-      "language": "English"
+      "language": "English",
+      "rank": 75
    },
    {
       "id": 47,
@@ -757,7 +832,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/392.jpg",
       "genres": ["Drama", "Fantasy", "Romance"],
       "summary": "Based on Melissa de la Cruz's best-selling novel, Witches of East End centers on the mysterious Beauchamp family who live in the secluded seaside town of East End. Free-spirited artist Joanna Beauchamp is the mother of w...",
-      "language": "English"
+      "language": "English",
+      "rank": 76
    },
    {
       "id": 78,
@@ -767,7 +843,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/568.jpg",
       "genres": ["Comedy", "Crime"],
       "summary": "Laura Diamond is a brilliant NYPD homicide detective who balances her \"Columbo\" day job with a crazy family life that includes two unruly twin boys and a soon-to-be ex-husband - also a cop - who just can't seem to sign t...",
-      "language": "English"
+      "language": "English",
+      "rank": 77
    },
    {
       "id": 80,
@@ -777,7 +854,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/240/600519.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in the Los Angeles area, who are interrelated through Jay Pritchett and his children, Claire Dunphy (née Pritchett) and...",
-      "language": "English"
+      "language": "English",
+      "rank": 78
    },
    {
       "id": 91,
@@ -787,7 +865,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/678.jpg",
       "genres": ["Comedy", "Family"],
       "summary": "No excuses, no apologies, no compromises. Wild child Rebecca Wright knows how to have a good time, but she also happens to be one of L.A.'s toughest and most respected criminal court judges. She has a reputation for unor...",
-      "language": "English"
+      "language": "English",
+      "rank": 79
    },
    {
       "id": 95,
@@ -797,7 +876,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/716.jpg",
       "genres": ["Drama", "Action", "Science-Fiction"],
       "summary": "The series tells the story of the aftermath of a global invasion by several races of extraterrestrials that neutralizes the world's power grid and technology, quickly destroys the combined militaries of all the world's c...",
-      "language": "English"
+      "language": "English",
+      "rank": 80
    },
    {
       "id": 5309,
@@ -807,7 +887,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/22/55234.jpg",
       "genres": ["Comedy", "Children"],
       "summary": "In the city of St. Canard, the people are plagued by the most bizarre criminals, but they have a protector as well, \"Darkwing Duck\". This bumbling and egoistical superhero battles evil in that fair city with the help of ...",
-      "language": "English"
+      "language": "English",
+      "rank": 81
    },
    {
       "id": 6970,
@@ -817,7 +898,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/69/173583.jpg",
       "genres": ["Drama", "Fantasy", "Horror"],
       "summary": "Somerset, England, 1888. A land and a community on the edge of monumental change, on the great hinge between ancient traditional ways and an industrial, scientific future. A land of ghosts and myths, poltergeists and dem...",
-      "language": "English"
+      "language": "English",
+      "rank": 82
    },
    {
       "id": 3,
@@ -827,7 +909,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/15.jpg",
       "genres": ["Drama", "Horror", "Romance"],
       "summary": "Based on the critically acclaimed series of novels from Kelley Armstrong. Set in Toronto and upper New York State, Bitten follows the adventures of 28-year-old Elena Michaels, the world's only female werewolf. An orphan,...",
-      "language": "English"
+      "language": "English",
+      "rank": 83
    },
    {
       "id": 15,
@@ -837,7 +920,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/154.jpg",
       "genres": ["Drama", "Action", "Horror"],
       "summary": "Based on the wildly popular comic book series \"Hellblazer\" from DC Comics, seasoned demon hunter and master of the occult John Constantine is armed with a ferocious knowledge of the dark arts and a wickedly naughty wit. ...",
-      "language": "English"
+      "language": "English",
+      "rank": 84
    },
    {
       "id": 20,
@@ -847,7 +931,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/130/325622.jpg",
       "genres": ["Drama", "Horror", "Thriller"],
       "summary": "The Strain is a high-concept thriller that tells the story of Dr. Ephraim Goodweather, the head of the Center for Disease Control Canary Team in New York City. He and his team are called upon to investigate a mysterious ...",
-      "language": "English"
+      "language": "English",
+      "rank": 85
    },
    {
       "id": 21,
@@ -857,7 +942,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/164/412464.jpg",
       "genres": ["Drama", "Action", "Thriller"],
       "summary": "Their mission is simple: Find a cure. Stop the virus. Save the world. When a global pandemic wipes out eighty percent of the planet's population, the crew of a lone and unaffected Navy destroyer, the USS Nathan James, mu...",
-      "language": "English"
+      "language": "English",
+      "rank": 86
    },
    {
       "id": 42,
@@ -867,7 +953,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/81/204166.jpg",
       "genres": ["Drama", "Mystery", "Supernatural"],
       "summary": "Sleepy Hollow is a thrilling mystery-adventure drama series spanning two and a half centuries, in which a resurrected Ichabod Crane pairs up with a present-day police lieutenant to save the enigmatic town of Sleepy Hollo...",
-      "language": "English"
+      "language": "English",
+      "rank": 87
    },
    {
       "id": 52,
@@ -877,7 +964,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/212/531512.jpg",
       "genres": ["Drama", "Thriller", "Legal"],
       "summary": "The brilliant, charismatic and seductive Professor Annalise Keating gets entangled with four law students from her class, How to Get Away with Murder. Little do they know that they will have to apply what they learned to...",
-      "language": "English"
+      "language": "English",
+      "rank": 88
    },
    {
       "id": 54,
@@ -887,7 +975,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/36/92018.jpg",
       "genres": ["Drama", "Crime", "Thriller"],
       "summary": "Sean Bean stars in Legends, a suspense-filled drama based on the award-winning book by master spy novelist Robert Littell. Bean plays Martin Odum, an undercover agent working for the FBI's Deep Cover Operations (DCO) div...",
-      "language": "English"
+      "language": "English",
+      "rank": 89
    },
    {
       "id": 55,
@@ -897,7 +986,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/441.jpg",
       "genres": ["Drama", "Comedy"],
       "summary": "What if a hospital was your high school, boarding school and summer camp rolled into one? What if it was the place where you fell in love for the first time and made friendships that lasted a lifetime? And what if it was...",
-      "language": "English"
+      "language": "English",
+      "rank": 90
    },
    {
       "id": 86,
@@ -907,7 +997,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/647.jpg",
       "genres": ["Crime", "Thriller"],
       "summary": "Stalker is a psychological thriller about detectives who investigate stalking incidents - including voyeurism, cyber harassment and romantic fixation - for the Threat Assessment Unit of the LAPD. Det. Jack Larsen is a re...",
-      "language": "English"
+      "language": "English",
+      "rank": 91
    },
    {
       "id": 88,
@@ -917,7 +1008,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/81/204119.jpg",
       "genres": ["Drama", "Romance", "History"],
       "summary": "Hidden between the lines of the history books is the story of Mary Stuart, the young woman the world would come to know as Mary, Queen of Scots. Queen of Scotland since she was six days old, the teenage Mary is already a...",
-      "language": "English"
+      "language": "English",
+      "rank": 92
    },
    {
       "id": 4,
@@ -927,7 +1019,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/213/534017.jpg",
       "genres": ["Drama", "Action", "Science-Fiction"],
       "summary": "After a violent shipwreck, billionaire playboy Oliver Queen was missing and presumed dead for five years before being discovered alive on a remote island in the Pacific. He returned home to Starling City, welcomed by his...",
-      "language": "English"
+      "language": "English",
+      "rank": 93
    },
    {
       "id": 53,
@@ -937,7 +1030,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/142/357495.jpg",
       "genres": ["Drama", "Music", "Romance"],
       "summary": "Nashville is set against the backdrop of the city's music scene and follows Rayna Jaymes and Juliette Barnes. Both women face personal and professional challenges as they navigate their paths as artists and individuals. ...",
-      "language": "English"
+      "language": "English",
+      "rank": 94
    },
    {
       "id": 87,
@@ -947,7 +1041,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/649.jpg",
       "genres": ["Drama", "Crime", "Thriller"],
       "summary": "When the body of a cartel member is found on US soil, Sonya Cross from El Paso PD and her Mexican counterpart, Marco Ruiz must work together to solve the case.",
-      "language": "English"
+      "language": "English",
+      "rank": 95
    },
    {
       "id": 89,
@@ -957,7 +1052,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/663.jpg",
       "genres": ["Drama", "Crime"],
       "summary": "Unforgettable follows Carrie Wells, an enigmatic former police detective with a rare condition that makes her memory so flawless that every place, every conversation, every moment of joy and every heartbreak is forever e...",
-      "language": "English"
+      "language": "English",
+      "rank": 96
    },
    {
       "id": 4041,
@@ -967,7 +1063,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/19/49609.jpg",
       "genres": ["Comedy"],
       "summary": "Seven people go on a three hour tour out of Hawaii. A bad storm hits and they end up shipwrecked on a deserted island. Many zany adventures ensue, mainly due to Gilligan's ineptness. The group includes the Skipper, Gilli...",
-      "language": "English"
+      "language": "English",
+      "rank": 97
    },
    {
       "id": 38,
@@ -977,7 +1074,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/170/426759.jpg",
       "genres": ["Action", "Horror", "Science-Fiction"],
       "summary": "Z Nation starts three years after the zombie virus has gutted the country, a team of everyday heroes must transport the only known survivor of the plague from New York to California, where the last functioning viral lab ...",
-      "language": "English"
+      "language": "English",
+      "rank": 98
    },
    {
       "id": 39,
@@ -987,7 +1085,8 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/0/350.jpg",
       "genres": ["Drama", "Science-Fiction", "Mystery"],
       "summary": "The people of Arcadia, Missouri are forever changed when their deceased loved ones suddenly start to reappear. An 8-year-old American boy wakes up alone in a rice paddy in a rural Chinese province with no idea how he got...",
-      "language": "English"
+      "language": "English",
+      "rank": 99
    },
    {
       "id": 44,
@@ -997,6 +1096,7 @@
       "thumbnail": "http://static.tvmaze.com/uploads/images/medium_portrait/128/322484.jpg",
       "genres": ["Drama", "Action", "Thriller"],
       "summary": "Scorpion, inspired by a true story, is a high-octane drama about eccentric genius Walter O'Brien and his team of brilliant misfits who comprise the last line of defense against complex, high-tech threats of the modern ag...",
-      "language": "English"
+      "language": "English",
+      "rank": 100
    }
 ]

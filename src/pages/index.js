@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import Snippet from "../components/snippet";
-import searchIcon from "../icons/search.svg";
+import Search from "../components/search";
 
 export default class Home extends React.Component {
    constructor(props) {
@@ -15,6 +15,7 @@ export default class Home extends React.Component {
          displayedSnippets: snippets,
          searchInput: "",
       };
+      this.searchSnippets = this.searchSnippets.bind(this);
    }
 
    searchSnippets(e) {
@@ -40,23 +41,14 @@ export default class Home extends React.Component {
             <h1>Top TV Shows of All Time</h1>
             <div className="row">
                <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-6 d-flex">
-                  <img
-                     src={searchIcon}
-                     width="28px"
-                     style={{ marginTop: "6px" }}
-                     alt=""
-                  />
-                  <input
-                     className="form-control ml-4"
+                  <Search
                      placeholder="Search for a show"
-                     onChange={(e) => {
-                        this.searchSnippets(e);
-                     }}
+                     onChange={this.searchSnippets}
                   />
                </div>
             </div>
             {this.state.displayedSnippets.map((snippet, i) => {
-               return <Snippet show={snippet} key={snippet.id} rank={i + 1} />;
+               return <Snippet show={snippet} key={snippet.id} />;
             })}
          </Layout>
       );
@@ -75,6 +67,7 @@ export const query = graphql`
                genres
                thumbnail
                summary
+               rank
             }
          }
       }

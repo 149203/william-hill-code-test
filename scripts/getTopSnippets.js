@@ -18,6 +18,12 @@ const englishSnippets = toSafeParse(data)
 
 const orderedSnippets = orderBy(englishSnippets, "rating", "desc");
 const topSnippets = take(orderedSnippets, 100);
+const rankedTopSnippets = topSnippets.map((snippet, i) => {
+   return {
+      ...snippet,
+      rank: i + 1,
+   };
+});
 
-fs.writeFileSync("../data/topSnippets.json", JSON.stringify(topSnippets));
-console.log(`Wrote ${topSnippets.length} snippets to topSnippets.json.`);
+fs.writeFileSync("../data/topSnippets.json", JSON.stringify(rankedTopSnippets));
+console.log(`Wrote ${rankedTopSnippets.length} snippets to topSnippets.json.`);

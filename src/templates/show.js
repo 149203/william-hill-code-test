@@ -7,7 +7,7 @@ import Score from "../components/score";
 import CtaButton from "../components/ctaButton";
 import ShowTitle from "../components/showTitle";
 import Season from "../components/season";
-import searchIcon from "../icons/search.svg";
+import Search from "../components/search";
 import cloneDeep from "lodash/cloneDeep";
 
 export default class Show extends React.Component {
@@ -20,6 +20,7 @@ export default class Show extends React.Component {
          displayedSeasons: seasons,
          searchInput: "",
       };
+      this.searchEpisodes = this.searchEpisodes.bind(this);
    }
 
    searchEpisodes(e) {
@@ -99,19 +100,10 @@ export default class Show extends React.Component {
                   <CtaButton url={url} xPadding={6} />
                </div>
 
-               <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-6 d-flex">
-                  <img
-                     src={searchIcon}
-                     width="28px"
-                     style={{ marginTop: "6px" }}
-                     alt=""
-                  />
-                  <input
-                     className="form-control ml-4"
+               <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-5 mb-md-0 d-flex">
+                  <Search
                      placeholder="Search for an episode"
-                     onChange={(e) => {
-                        this.searchEpisodes(e);
-                     }}
+                     onChange={this.searchEpisodes}
                   />
                </div>
 
