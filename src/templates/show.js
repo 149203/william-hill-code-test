@@ -99,7 +99,7 @@ export default class Show extends React.Component {
                   <CtaButton url={url} xPadding={6} />
                </div>
 
-               <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-5 mb-md-0 d-flex">
+               <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-6 d-flex">
                   <img
                      src={searchIcon}
                      width="28px"

@@ -16,7 +16,7 @@ export default function Layout({ children }) {
    );
    return (
       <>
-         <header className="w-100 bg-primary text-white pt-2 pb-1 mb-7">
+         <header className="w-100 bg-primary text-white pt-2 pb-1 mb-6">
             <div className="container">
                <div className="row">
                   <div className="col-12 col-xl-10 offset-xl-1">

@@ -5,7 +5,6 @@ import Score from "./score";
 
 export default function SnippetTitle(props) {
    const { name, rating, genres, premieredAt } = props.show;
-
    return (
       <section>
          <h4 className="mb-2">
