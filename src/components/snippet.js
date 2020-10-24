@@ -1,40 +1,16 @@
 import React from "react";
-import formatDate from "date-fns/format";
-import { toListText, toDateNum, toJsDate } from "../utils/helpers";
 import Score from "./score";
+import SnippetTitle from "./snippetTitle";
 import { Link } from "gatsby";
 
 export default function Snippet(props) {
-   const {
-      thumbnail,
-      name,
-      rating,
-      premieredAt,
-      genres,
-      summary,
-      id,
-   } = props.show;
-   const friendlyPremieredAt = formatDate(
-      toJsDate(toDateNum(premieredAt)),
-      "LLL. d, yyyy"
-   );
+   const { thumbnail, name, rating, summary, id } = props.show;
+
    return (
       <Link to={`/${id}`}>
          <article className="row mb-7">
             <div className="col-12 d-sm-none">
-               <h4 className="mb-2">
-                  <span className="mr-2 mr-md-0">
-                     {props.rank}.{" "}
-                     <span className="text-decoration-underline">{name}</span>
-                  </span>
-                  <span className="d-none d-sm-inline d-md-none">
-                     {" "}
-                     <Score size="sm" rating={rating} />
-                  </span>
-               </h4>
-               <p className="text-muted mb-3">
-                  {toListText(genres)} | Premiered on {friendlyPremieredAt}
-               </p>
+               <SnippetTitle show={props.show} rank={props.rank} />
             </div>
             <div className="col-4 col-sm-2">
                <img
@@ -48,21 +24,7 @@ export default function Snippet(props) {
             </div>
             <div className="col-8 col-sm-10 col-md-8">
                <div className="d-none d-sm-block">
-                  <h4 className="mb-2">
-                     <span className="mr-2 mr-md-0">
-                        {props.rank}.{" "}
-                        <span className="text-decoration-underline">
-                           {name}
-                        </span>
-                     </span>
-                     <span className="d-none d-sm-inline d-md-none">
-                        {" "}
-                        <Score size="sm" rating={rating} />
-                     </span>
-                  </h4>
-                  <p className="text-muted mb-3">
-                     {toListText(genres)} | Premiered on {friendlyPremieredAt}
-                  </p>
+                  <SnippetTitle show={props.show} rank={props.rank} />
                </div>
                <p>{summary}</p>
             </div>

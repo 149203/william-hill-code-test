@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import { stripTags, toShowDate, truncate } from "../utils/helpers";
+import { stripTags, truncate } from "../utils/helpers";
 import getSeasons from "../utils/getSeasons";
 import Score from "../components/score";
-import Screenshot from "../components/screenshot";
 import CtaButton from "../components/ctaButton";
 import ShowTitle from "../components/showTitle";
+import Season from "../components/season";
 import searchIcon from "../icons/search.svg";
 import cloneDeep from "lodash/cloneDeep";
 
@@ -76,9 +76,7 @@ export default class Show extends React.Component {
                      />
                   </div>
                   <div className="clearfix" />
-                  <CtaButton url={url} xPadding={0}>
-                     View on TVmaze
-                  </CtaButton>
+                  <CtaButton url={url} xPadding={0} />
                </div>
                <div className="col-8 col-sm-9">
                   <div className="row">
@@ -98,9 +96,7 @@ export default class Show extends React.Component {
                   <p className="mt-md-5 d-none d-md-block">
                      {truncate(stripTags(summary), 700)}
                   </p>
-                  <CtaButton url={url} xPadding={6}>
-                     View on TVmaze
-                  </CtaButton>
+                  <CtaButton url={url} xPadding={6} />
                </div>
 
                <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-5 mb-md-0 d-flex">
@@ -120,70 +116,7 @@ export default class Show extends React.Component {
                </div>
 
                {this.state.displayedSeasons.map((season) => {
-                  return (
-                     <section className="col-12" key={season.number}>
-                        <h3>Season {season.number}</h3>
-                        <p className="text-muted">
-                           {season.episodes.length} episode
-                           {season.episodes.length !== 1 ? "s" : ""}
-                           {season.airedAt &&
-                              " | Aired " + toShowDate(season.airedAt)}
-                        </p>
-                        <hr className="mt-2 mb-5" />
-                        {season.episodes.map((episode) => {
-                           return (
-                              <div className="row mb-7" key={episode.id}>
-                                 <div className="col-12 d-md-none">
-                                    <a
-                                       href={episode.url}
-                                       target="_blank"
-                                       rel="noreferrer"
-                                       className="mb-1 h5 text-decoration-underline"
-                                    >
-                                       {episode.name}
-                                    </a>
-                                    <p className="text-muted mb-2">
-                                       Season {episode.season} | Episode{" "}
-                                       {episode.number}
-                                       {episode.airdate &&
-                                          " | " + toShowDate(episode.airdate)}
-                                    </p>
-                                 </div>
-
-                                 <div className="col-5 col-md-3">
-                                    <Screenshot episode={episode} />
-                                 </div>
-                                 <div className="col-7 col-md-9">
-                                    <div className="d-none d-md-block">
-                                       <a
-                                          href={episode.url}
-                                          target="_blank"
-                                          rel="noreferrer"
-                                          className="mb-1 h5 text-decoration-underline"
-                                       >
-                                          {episode.name}
-                                       </a>
-                                       <p className="text-muted mb-2">
-                                          Season {episode.season} | Episode{" "}
-                                          {episode.number}
-                                          {episode.airdate &&
-                                             " | " +
-                                                toShowDate(episode.airdate)}
-                                       </p>
-                                    </div>
-                                    <p>
-                                       {episode.summary &&
-                                          truncate(
-                                             stripTags(episode.summary),
-                                             270
-                                          )}
-                                    </p>
-                                 </div>
-                              </div>
-                           );
-                        })}
-                     </section>
-                  );
+                  return <Season season={season} key={season.number} />;
                })}
             </article>
          </Layout>
