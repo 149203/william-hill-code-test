@@ -39,11 +39,13 @@ export default class Show extends React.Component {
                let episodes = [];
                season.episodes.forEach((episode) => {
                   const lowerCasedInput = searchInput.toLowerCase();
-                  if (
-                     episode.name.toLowerCase().includes(lowerCasedInput) ||
-                     episode.summary.toLowerCase().includes(lowerCasedInput)
-                  ) {
-                     episodes = episodes.concat(episode);
+                  if (episode.name && episode.summary) {
+                     if (
+                        episode.name.toLowerCase().includes(lowerCasedInput) ||
+                        episode.summary.toLowerCase().includes(lowerCasedInput)
+                     ) {
+                        episodes = episodes.concat(episode);
+                     }
                   }
                });
                season.episodes = episodes;
