@@ -1,15 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import {
-   stripTags,
-   toListText,
-   toDateNum,
-   toJsDate,
-   truncate,
-} from "../utils/helpers";
+import { stripTags, toShowDate, truncate } from "../utils/helpers";
+import getSeasons from "../utils/getSeasons";
 import Score from "../components/score";
-import formatDate from "date-fns/format";
+import Screenshot from "../components/screenshot";
+import CtaButton from "../components/ctaButton";
+import ShowTitle from "../components/showTitle";
 import searchIcon from "../icons/search.svg";
 import cloneDeep from "lodash/cloneDeep";
 
@@ -17,7 +14,7 @@ export default class Show extends React.Component {
    constructor(props) {
       super(props);
       const episodes = this.props.data.show._embedded.episodes;
-      const seasons = this.getSeasons(episodes);
+      const seasons = getSeasons(episodes);
       this.state = {
          seasons,
          displayedSeasons: seasons,
@@ -25,14 +22,14 @@ export default class Show extends React.Component {
       };
    }
 
-   setSearch(e) {
+   searchEpisodes(e) {
       const searchInput = e.target.value;
       this.setState((prevState) => {
          return {
             searchInput,
-            displayedSeasons: getSeasons(),
+            displayedSeasons: getNewSeasons(),
          };
-         function getSeasons() {
+         function getNewSeasons() {
             let seasons = [];
             const copyOfSeasons = cloneDeep(prevState.seasons);
             copyOfSeasons.forEach((season) => {
@@ -58,92 +55,13 @@ export default class Show extends React.Component {
       });
    }
 
-   toShowDate(yyyy_mm_dd) {
-      return formatDate(toJsDate(toDateNum(yyyy_mm_dd)), "LLL. d, yyyy");
-   }
-
-   getSeasons(episodes) {
-      let seasons = [];
-      episodes.forEach((episode) => {
-         // get list of season numbers
-         const seasonNumbers = seasons.map((season) => {
-            return season.number;
-         });
-         // if episode season number is not in seasons create a new season
-         if (!seasonNumbers.includes(episode.season)) {
-            seasons = seasons.concat({
-               number: episode.season,
-               episodes: [episode],
-               isOpen: false,
-               airedAt: episode.airdate,
-            });
-         } else {
-            // else concat the episode into its season
-            const seasonIndex = seasons.findIndex((season) => {
-               return season.number === episode.season;
-            });
-            const targetSeason = seasons[seasonIndex];
-            const episodes = targetSeason.episodes.concat(episode);
-            targetSeason.episodes = episodes;
-         }
-      });
-      return seasons;
-   }
-
-   displayScreenshot(episode) {
-      if (episode.image)
-         return (
-            <img
-               src={episode.image.medium}
-               className="img-fluid mb-2 mb-sm-0"
-               alt={`Screenshot of episode: ${episode.name}`}
-            />
-         );
-      else
-         return (
-            <div
-               className="bg-light w-100 position-relative"
-               style={{
-                  paddingTop: "56.25%",
-               }}
-            >
-               <p
-                  className="text-white lead"
-                  style={{
-                     position: "absolute",
-                     left: 0,
-                     bottom: 0,
-                     right: 0,
-                     textAlign: "center",
-                     top: "32%",
-                  }}
-               >
-                  NA
-               </p>
-            </div>
-         );
-   }
-
    render() {
-      const {
-         name,
-         image,
-         summary,
-         rating,
-         premiered,
-         genres,
-         url,
-      } = this.props.data.show;
-
+      const { name, image, summary, rating, url } = this.props.data.show;
       return (
          <Layout>
             <article className="row">
                <div className="col-12 d-md-none">
-                  <h1>{name}</h1>
-                  <p className="text-muted mb-3">
-                     {toListText(genres)} | Premiered on{" "}
-                     {this.toShowDate(premiered)}
-                  </p>
+                  <ShowTitle show={this.props.data.show} />
                </div>
                <div className="col-4 col-sm-3">
                   <img
@@ -158,23 +76,14 @@ export default class Show extends React.Component {
                      />
                   </div>
                   <div className="clearfix" />
-                  <a
-                     href={url}
-                     target="_blank"
-                     rel="noreferrer"
-                     className="btn btn-primary btn-lg btn-block mt-6 d-none d-md-inline-block d-lg-none px-0"
-                  >
+                  <CtaButton url={url} xPadding={0}>
                      View on TVmaze
-                  </a>
+                  </CtaButton>
                </div>
                <div className="col-8 col-sm-9">
                   <div className="row">
                      <div className="col-12 col-md-10 d-none d-md-block">
-                        <h1>{name}</h1>
-                        <p className="text-muted mb-3">
-                           {toListText(genres)} | Premiered on{" "}
-                           {this.toShowDate(premiered)}
-                        </p>
+                        <ShowTitle show={this.props.data.show} />
                      </div>
                      <div className="d-none d-md-block col-md-2">
                         <Score
@@ -189,14 +98,9 @@ export default class Show extends React.Component {
                   <p className="mt-md-5 d-none d-md-block">
                      {truncate(stripTags(summary), 700)}
                   </p>
-                  <a
-                     href={url}
-                     target="_blank"
-                     rel="noreferrer"
-                     className="btn btn-primary btn-lg mt-6 d-inline-block d-md-none d-lg-inline-block px-6"
-                  >
+                  <CtaButton url={url} xPadding={6}>
                      View on TVmaze
-                  </a>
+                  </CtaButton>
                </div>
 
                <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-5 mb-md-0 d-flex">
@@ -210,7 +114,7 @@ export default class Show extends React.Component {
                      className="form-control ml-4"
                      placeholder="Search for an episode"
                      onChange={(e) => {
-                        this.setSearch(e);
+                        this.searchEpisodes(e);
                      }}
                   />
                </div>
@@ -223,7 +127,7 @@ export default class Show extends React.Component {
                            {season.episodes.length} episode
                            {season.episodes.length !== 1 ? "s" : ""}
                            {season.airedAt &&
-                              " | Aired " + this.toShowDate(season.airedAt)}
+                              " | Aired " + toShowDate(season.airedAt)}
                         </p>
                         <hr className="mt-2 mb-5" />
                         {season.episodes.map((episode) => {
@@ -242,13 +146,12 @@ export default class Show extends React.Component {
                                        Season {episode.season} | Episode{" "}
                                        {episode.number}
                                        {episode.airdate &&
-                                          " | " +
-                                             this.toShowDate(episode.airdate)}
+                                          " | " + toShowDate(episode.airdate)}
                                     </p>
                                  </div>
 
                                  <div className="col-5 col-md-3">
-                                    {this.displayScreenshot(episode)}
+                                    <Screenshot episode={episode} />
                                  </div>
                                  <div className="col-7 col-md-9">
                                     <div className="d-none d-md-block">
@@ -265,9 +168,7 @@ export default class Show extends React.Component {
                                           {episode.number}
                                           {episode.airdate &&
                                              " | " +
-                                                this.toShowDate(
-                                                   episode.airdate
-                                                )}
+                                                toShowDate(episode.airdate)}
                                        </p>
                                     </div>
                                     <p>

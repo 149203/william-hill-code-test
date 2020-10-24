@@ -1,3 +1,5 @@
+import formatDate from "date-fns/format";
+
 export function toListText(words, conjunction) {
    // returns a string of words combined in a natural-language style
    if (conjunction) {
@@ -35,6 +37,10 @@ export function toJsDate(eightDigitNum) {
    const month = Number(str.slice(4, 6)) - 1;
    const day = Number(str.slice(6));
    return new Date(year, month, day);
+}
+
+export function toShowDate(yyyy_mm_dd) {
+   return formatDate(toJsDate(toDateNum(yyyy_mm_dd)), "LLL. d, yyyy");
 }
 
 export function stripTags(str) {
