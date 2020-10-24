@@ -10,6 +10,7 @@ import {
 } from "../utils/helpers";
 import Score from "../components/score";
 import formatDate from "date-fns/format";
+import searchIcon from "../icons/search.svg";
 
 export default class Show extends React.Component {
    constructor(props) {
@@ -59,17 +60,31 @@ export default class Show extends React.Component {
          return (
             <img
                src={episode.image.medium}
-               className="img-fluid"
+               className="img-fluid mb-2 mb-sm-0"
                alt={`Screenshot of episode: ${episode.name}`}
             />
          );
       else
          return (
             <div
-               className="bg-light d-flex justify-content-center align-items-center"
-               style={{ width: "207px", height: "116px" }}
+               className="bg-light w-100 position-relative"
+               style={{
+                  paddingTop: "56.25%",
+               }}
             >
-               <p className="text-white lead">NA</p>
+               <p
+                  className="text-white lead"
+                  style={{
+                     position: "absolute",
+                     left: 0,
+                     bottom: 0,
+                     right: 0,
+                     textAlign: "center",
+                     top: "32%",
+                  }}
+               >
+                  NA
+               </p>
             </div>
          );
    }
@@ -149,23 +164,34 @@ export default class Show extends React.Component {
                   </a>
                </div>
 
+               <div className="col-12 col-md-5 offset-md-7 col-lg-4 offset-lg-8 mt-7 mb-5 mb-md-0 d-flex">
+                  <img
+                     src={searchIcon}
+                     width="28px"
+                     style={{ marginTop: "6px" }}
+                     alt=""
+                  />
+                  <input
+                     className="form-control ml-4"
+                     placeholder="Search for an episode"
+                  />
+               </div>
+
                {this.state.displayedSeasons.map((season) => {
                   return (
-                     <section className="col-12 mt-7" key={season.number}>
+                     <section className="col-12" key={season.number}>
                         <h3>Season {season.number}</h3>
-                        <p className="text-muted mb-5">
+                        <p className="text-muted">
                            {season.episodes.length} episode
                            {season.episodes.length !== 1 ? "s" : ""}
                            {season.airedAt &&
                               " | Aired " + this.toShowDate(season.airedAt)}
                         </p>
+                        <hr className="mt-2 mb-5" />
                         {season.episodes.map((episode) => {
                            return (
                               <div className="row mb-7" key={episode.id}>
-                                 <div className="col-3">
-                                    {this.displayScreenshot(episode)}
-                                 </div>
-                                 <div className="col-9">
+                                 <div className="col-12 d-md-none">
                                     <a
                                        href={episode.url}
                                        target="_blank"
@@ -181,6 +207,31 @@ export default class Show extends React.Component {
                                           " | " +
                                              this.toShowDate(episode.airdate)}
                                     </p>
+                                 </div>
+
+                                 <div className="col-5 col-md-3">
+                                    {this.displayScreenshot(episode)}
+                                 </div>
+                                 <div className="col-7 col-md-9">
+                                    <div className="d-none d-md-block">
+                                       <a
+                                          href={episode.url}
+                                          target="_blank"
+                                          rel="noreferrer"
+                                          className="mb-1 h5 text-decoration-underline"
+                                       >
+                                          {episode.name}
+                                       </a>
+                                       <p className="text-muted mb-2">
+                                          Season {episode.season} | Episode{" "}
+                                          {episode.number}
+                                          {episode.airdate &&
+                                             " | " +
+                                                this.toShowDate(
+                                                   episode.airdate
+                                                )}
+                                       </p>
+                                    </div>
                                     <p>
                                        {episode.summary &&
                                           truncate(

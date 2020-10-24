@@ -236,6 +236,8 @@ $input-btn-focus-width: 0.2rem;
 $input-btn-focus-color: rgba($component-active-bg, 0.25);
 $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
 
+$input-placeholder-color: $text-muted;
+
 // BUTTONS
 
 $btn-font-weight: $font-weight-normal;
@@ -292,7 +294,7 @@ $input-height-lg: add(
 $input-bg: $white;
 $input-disabled-bg: $gray-200;
 $input-color: $gray-700;
-$input-border-color: $gray-400;
+$input-border-color: $gray-300;
 
 $input-focus-bg: $input-bg;
 $input-focus-border-color: lighten($component-active-bg, 25%);
