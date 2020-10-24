@@ -85,40 +85,65 @@ export default class Show extends React.Component {
          url,
       } = this.props.data.show;
 
-      console.log(this.props.data.show);
-
       return (
          <Layout>
             <article className="row">
-               <div className="col-3">
+               <div className="col-12 d-md-none">
+                  <h1>{name}</h1>
+                  <p className="text-muted mb-3">
+                     {toListText(genres)} | Premiered on{" "}
+                     {this.toShowDate(premiered)}
+                  </p>
+               </div>
+               <div className="col-4 col-sm-3">
                   <img
                      src={image.medium}
                      alt={`Promotional poster for ${name}`}
                      className="img-fluid"
                   />
+                  <div className="float-right mt-3 d-md-none">
+                     <Score
+                        size="sm"
+                        rating={Math.round(rating.average * 10)}
+                     />
+                  </div>
+                  <div className="clearfix" />
+                  <a
+                     href={url}
+                     target="_blank"
+                     rel="noreferrer"
+                     className="btn btn-primary btn-lg btn-block mt-6 d-none d-md-inline-block d-lg-none px-0"
+                  >
+                     View on TVmaze
+                  </a>
                </div>
-               <div className="col-9">
+               <div className="col-8 col-sm-9">
                   <div className="row">
-                     <div className="col-10">
+                     <div className="col-12 col-md-10 d-none d-md-block">
                         <h1>{name}</h1>
                         <p className="text-muted mb-3">
                            {toListText(genres)} | Premiered on{" "}
                            {this.toShowDate(premiered)}
                         </p>
                      </div>
-                     <div className="col-2">
+                     <div className="d-none d-md-block col-md-2">
                         <Score
                            size="md"
                            rating={Math.round(rating.average * 10)}
                         />
                      </div>
                   </div>
-                  <p className="mt-5">{truncate(stripTags(summary), 700)}</p>
+                  <p className="mt-md-5 d-md-none">
+                     {truncate(stripTags(summary), 400)}
+                  </p>
+                  <p className="mt-md-5 d-none d-md-block">
+                     {truncate(stripTags(summary), 700)}
+                  </p>
                   <a
                      href={url}
                      target="_blank"
                      rel="noreferrer"
-                     className="btn btn-primary btn-lg mt-6"
+                     className="btn btn-primary btn-lg mt-6 d-inline-block d-md-none d-lg-inline-block px-6"
                   >
                      View on TVmaze
                   </a>
@@ -141,7 +166,14 @@ export default class Show extends React.Component {
                                     {this.displayScreenshot(episode)}
                                  </div>
                                  <div className="col-9">
-                                    <h5 className="mb-1">{episode.name}</h5>
+                                    <a
+                                       href={episode.url}
+                                       target="_blank"
+                                       rel="noreferrer"
+                                       className="mb-1 h5 text-decoration-underline"
+                                    >
+                                       {episode.name}
+                                    </a>
                                     <p className="text-muted mb-2">
                                        Season {episode.season} | Episode{" "}
                                        {episode.number}
