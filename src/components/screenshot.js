@@ -5,11 +5,14 @@ export default function Screenshot(props) {
    if (episode.image)
       return (
          // TODO: add a gray image placeholder
-         <img
-            src={episode.image.medium}
-            className="img-fluid mb-2 mb-sm-0"
-            alt={`Screenshot of episode: ${episode.name}`}
-         />
+         <div className="img-placeholder">
+            <img
+               src={episode.image.medium}
+               className="img-fluid mb-2 mb-sm-0 position-absolute"
+               style={{ top: 0, left: 0, width: "100%" }}
+               alt={`Screenshot of episode: ${episode.name}`}
+            />
+         </div>
       );
    else
       return (
