@@ -4,7 +4,6 @@ export default function Screenshot(props) {
    const { episode } = props;
    if (episode.image)
       return (
-         // TODO: add a gray image placeholder
          <div className="img-placeholder">
             <img
                src={episode.image.medium}
